@@ -1,11 +1,12 @@
 package cts.Seminar_1;
 
-public abstract class Animal {
+public class IngrijitorZOO {
     private String nume;
+    public void hranesteAnimal(Animal animal, String hrana){
+        animal.mananca(hrana);
+    }
 
-    abstract void mananca(String hrana);
-
-    public Animal(String nume) {
+    public IngrijitorZOO(String nume) {
         this.nume = nume;
     }
 
