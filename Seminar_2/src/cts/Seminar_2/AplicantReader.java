@@ -1,9 +1,18 @@
 package cts.Seminar_2;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public abstract class AplicantReader implements Reader{
+    protected Scanner scanner;
+
+    AplicantReader(String numeFiser) throws FileNotFoundException {
+        scanner = new Scanner(new File(numeFiser));
+    }
+
     public void readAplicant(Scanner scanner, Aplicant aplicant){
+
         String nume = scanner.next();
         String prenume = scanner.next();
         int varsta = scanner.nextInt();
