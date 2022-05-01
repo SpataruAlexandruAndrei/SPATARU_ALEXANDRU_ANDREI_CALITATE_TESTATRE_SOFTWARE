@@ -1,4 +1,4 @@
-package cts.Seminar_3;
+package cts.Seminar_4;
 
 public class Tramvai extends MijlocTransport{
     private String numeVatman;

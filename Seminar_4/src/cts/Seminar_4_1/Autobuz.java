@@ -1,4 +1,4 @@
-package cts.Seminar_3_1;
+package cts.Seminar_4_1;
 
 public class Autobuz {
     private String model;

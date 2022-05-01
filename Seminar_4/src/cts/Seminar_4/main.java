@@ -1,4 +1,4 @@
-package cts.Seminar_3;
+package cts.Seminar_4;
 
 public class main {
     public static void main(String[] args) throws CloneNotSupportedException {
