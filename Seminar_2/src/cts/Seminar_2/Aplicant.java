@@ -51,9 +51,9 @@ public abstract class Aplicant {
 
     public void setDenumiriProiecte(Integer nrProiecte, String[] denumiri) {
         this.nrProiecte = nrProiecte;
-        denumireProiect= new String[nrProiecte];
-        for(Integer i=0; i<nrProiecte; i++){
-            denumireProiect[i]=denumiri[i];
+        denumireProiect = new String[nrProiecte];
+        for (Integer i = 0; i < nrProiecte; i++) {
+            denumireProiect[i] = denumiri[i];
         }
     }
 

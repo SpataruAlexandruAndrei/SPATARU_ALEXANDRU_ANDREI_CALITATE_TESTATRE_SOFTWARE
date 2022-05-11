@@ -1,6 +1,6 @@
 package cts.Seminar_4;
 
-public abstract class MijlocTransport implements Cloneable{
+public abstract class MijlocTransport implements Cloneable {
     private String nuamrInmatriculare;
 
     public MijlocTransport(String nuamrInmatriculare) {
