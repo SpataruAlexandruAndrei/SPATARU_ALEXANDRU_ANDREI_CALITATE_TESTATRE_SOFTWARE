@@ -1,0 +1,23 @@
+package main;
+
+import cts.proxy.Autobuz;
+import cts.proxy.MijlocTransport;
+import cts.decorator.Decorator;
+import cts.decorator.DecoratorOcazional;
+import cts.decorator.Printer;
+import cts.decorator.PrinterBilet;
+
+public class Main {
+    public static void main(String[] args) {
+//      Decorator
+        Printer printer = new PrinterBilet();
+        Decorator decorator = new DecoratorOcazional(printer, "La multi ani!");
+        printer.printeazaBilet();
+        decorator.printeazaMesaj();
+
+//      Proxy
+        MijlocTransport autobuzNormal = new Autobuz(0, "nume1");
+        autobuzNormal.opresteInStatie();
+    }
+
+}
